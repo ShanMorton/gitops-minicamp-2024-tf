@@ -87,8 +87,8 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: terraform plan -input=false
-
+      run: terraform  -input=false -plan
+ 
       # On push to $default-branch, build or change infrastructure according to Terraform configuration files
       # Note: It is recommended to set up a required "strict" status check in your repository for "Terrafo
       #dispatch?  work flow dispatch. 
